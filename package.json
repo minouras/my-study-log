@@ -16,13 +16,22 @@
     "preact-router": "^4.1.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
     "@preact/preset-vite": "^2.10.2",
     "@tailwindcss/postcss": "^4.1.16",
     "@types/node": "^24.6.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-preact": "^0.1.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4.1.16",
     "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.3",
     "vite": "^7.1.7"
   },
   "volta": {
