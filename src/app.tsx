@@ -11,6 +11,7 @@ export default function App() {
       <Header />
       <main class="p-4">
         <Router>
+          {/* @ts-ignore */}
           <Home path="my-study-log/" />
           <Post path="my-study-log/post/:id" />
         </Router>
