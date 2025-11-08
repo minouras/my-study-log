@@ -8,11 +8,5 @@ export default defineConfig({
   plugins: [preact(),tailwindcss(),],
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-        fallback: '404.html' // これが重要
-      }
-    }
   }
 })
