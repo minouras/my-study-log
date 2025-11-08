@@ -15,7 +15,7 @@ export default function Post({ id }: Props) {
 
   useEffect(() => {
     if (!id) return;
-    const key = `../posts/post${id}.tsx`;
+    const key = `../posts/${id}.tsx`;
     const loader = postModules[key];
 
     if (loader) {
