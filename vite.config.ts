@@ -6,5 +6,13 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: "/my-study-log/",
   plugins: [preact(),tailwindcss(),],
-  
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        fallback: '404.html' // これが重要
+      }
+    }
+  }
 })
