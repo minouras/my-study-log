@@ -1,12 +1,18 @@
-import { defineConfig } from 'vite'
-import preact from '@preact/preset-vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import preact from '@preact/preset-vite';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/my-study-log/",
-  plugins: [preact(),tailwindcss(),],
+  base: '/my-study-log/',
+  plugins: [preact(), tailwindcss()],
+  resolve: {
+    alias: {
+      react: 'preact/compat',
+      'react-dom': 'preact/compat',
+    },
+  },
   build: {
     outDir: 'dist',
-  }
-})
+  },
+});

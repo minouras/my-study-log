@@ -1,0 +1,56 @@
+.markdown {
+  background-color: #212121;
+  border-radius: 10px;
+  color: white;
+  padding: 2rem 3vw;
+  max-width: 1000px;
+}
+
+.markdown h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.markdown h3 {
+  font-size: 1.18em;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.markdown p {
+  margin-bottom: 1.8rem;
+}
+
+.markdown hr {
+  border-color: white;
+  margin-block: 1.5rem;
+}
+
+.markdown ul {
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+.markdown ol {
+  list-style: decimal;
+}
+
+.markdown ul li p,
+.markdown ol li p {
+  margin-bottom: 0;
+}
+
+.markdown pre {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    SF Mono,
+    Menlo,
+    Consolas,
+    Liberation Mono,
+    monospace !important;
+  margin-top: 0.6rem;
+  background-color: #000;
+  border-radius: 6px;
+  padding: 0.8rem 2%;
+}
