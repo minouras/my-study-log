@@ -1,13 +1,9 @@
-import { Link } from "preact-router";
-
-
 export default function Header() {
   return (
     <header class="bg-white shadow p-4">
       <h1 class="text-xl font-bold text-blue-600">
-        {/* @ts-ignore */}
-        <Link href="/">勉強ログ</Link>
+        <a href="/my-study-log/">勉強ログ</a>
       </h1>
     </header>
-  )
+  );
 }

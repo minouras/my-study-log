@@ -1,19 +1,16 @@
-// import { h } from 'preact'
-import { Link } from 'preact-router'
-import RouteComponentProps from 'preact-router'
+import type { ComponentType } from 'react';
 
-interface Props extends RouteComponentProps {}
-
-export default function Home({}: Props) {
+export default function Home() {
   // 記事ファイルを一括読み込み（同期）
-  const modules = import.meta.glob('./../posts/*.tsx', { eager: true })
+  const modules = import.meta.glob<{
+    default: ComponentType<any>;
+  }>('./../posts/*.tsx', { eager: true });
 
   // ファイル名からIDを抽出し、一覧を作成
   const posts = Object.entries(modules).map(([path, mod]) => {
-    const id = path.split('/').pop()?.replace('.tsx', '')
-    // @ts-ignore
-    return { id, component: mod.default }
-  })
+    const id = path.split('/').pop()?.replace('.tsx', '');
+    return { id, component: mod.default };
+  });
 
   return (
     <div class="space-y-4">
@@ -21,13 +18,12 @@ export default function Home({}: Props) {
       <ul class="space-y-2">
         {posts.map(({ id }) => (
           <li key={id}>
-            {/* @ts-ignore */}
-            <Link href={`post/${id}`} class="text-blue-600 hover:underline">
+            <a href={`post/${id}`} class="text-blue-600 hover:underline">
               {id}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
