@@ -1,18 +1,21 @@
-import SingleBase from '../../components/SingleBase';
+import { type PostMeta } from '../../lib/type';
+import SingleBase from '../../components/base/SingleBase';
 import Block from '../../components/ui/Block';
 import ListBlock from '../../components/ui/ListBlock';
 
 const titleTxt = 'text-xl font-bold text-blue-600 mb-2';
 const strongTxt = 'text-base font-semibold mb-1';
 
+export const meta: PostMeta = {
+  title: 'モードレスデザイン勉強会',
+  date: '2025.11.03',
+  tags: ['勉強会', 'デザイン'],
+};
+
 export default function post251103() {
   return (
     <div>
-      <SingleBase
-        title="モードレスデザイン勉強会"
-        date="2025.11.03"
-        tags={['勉強会', 'デザイン']}
-      ></SingleBase>
+      <SingleBase title={meta.title} date={meta.date} tags={meta.tags}></SingleBase>
       <article>
         <h2 className={titleTxt}>勉強会の前提</h2>
         <Block>

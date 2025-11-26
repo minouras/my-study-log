@@ -1,5 +1,5 @@
 import { Router, Route, LocationProvider } from 'preact-iso';
-import Header from './components/Header';
+import Header from './components/base/Header';
 import Home from './pages/Home';
 import Post from './pages/Post';
 
