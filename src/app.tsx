@@ -5,7 +5,7 @@ import Post from './pages/Post';
 
 export default function App() {
   return (
-    <div class="min-h-screen bg-gray-50 text-gray-800">
+    <div class="min-h-screen">
       <Header />
       <main class="p-4">
         <LocationProvider>
