@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div class="space-y-4">
-      <h1 class="text-2xl font-bold">記事一覧</h1>
+      <h1 class="text-xl font-bold mb-4">記事一覧</h1>
       <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
         {posts.map(({ id, meta }) => (
           <li key={id}>
