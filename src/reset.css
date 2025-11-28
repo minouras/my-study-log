@@ -1,0 +1,64 @@
+/* --- Reset & Sanitize --- */
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* 画像やメディアをコンテナに収める */
+img,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* フォーム要素の基本調整 */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+/* リンクの下線をデフォルトで消す */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* テーブルの基本調整 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 見出しの余白リセット */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* リストの余白リセット */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
