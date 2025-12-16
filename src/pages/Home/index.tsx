@@ -20,8 +20,8 @@ export default function Home() {
       <h1 class="text-xl font-bold mb-4">記事一覧</h1>
       <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
         {posts.map(({ id, meta }) => (
-          <li key={id}>
-            <a className="block" href={`post/${id}`} class="text-blue-600 hover:underline">
+          <li key={id} className="">
+            <a className="block h-full" href={`post/${id}`} class="text-blue-600 hover:underline">
               <BlogCard {...meta}></BlogCard>
             </a>
           </li>
