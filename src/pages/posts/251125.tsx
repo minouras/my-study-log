@@ -7,7 +7,7 @@ import '../../components/style/markdown.css';
 export const meta: PostMeta = {
   title: 'CJSとESMの違い',
   date: '2025.11.25',
-  tags: ['js', 'CJS', 'ESM', 'chatGPT'],
+  tags: ['js', 'CJS', 'ESM'],
 };
 
 export default function post251125() {
@@ -15,6 +15,7 @@ export default function post251125() {
     <div>
       <SingleBase title={meta.title} date={meta.date} tags={meta.tags}></SingleBase>
       <article>
+        <p>chatGPTより</p>
         <div class="markdown">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
