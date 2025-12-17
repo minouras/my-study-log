@@ -1,6 +1,7 @@
 import { type PostMeta } from '../../lib/type';
 import SingleBase from '../../components/base/SingleBase';
 import Block from '../../components/ui/Block';
+import CodeBlock from '../../components/ui/CodeBlock';
 
 export const meta: PostMeta = {
   title: 'Hono 勉強記録',
@@ -51,7 +52,8 @@ export default function post251217() {
           </ul>
         </Block>
 
-        <div className={'py-6'}></div>
+        <div className={'py-8'}></div>
+
         <h2 className={titleTxt}>Hono + Prisma ハンズオン</h2>
         <Block>
           <h3 className="font-semibold text-lg">Hono + Prismaで作る「ミニ記事API」</h3>
@@ -62,8 +64,10 @@ export default function post251217() {
             <li>ORM：Prisma</li>
           </ul>
         </Block>
-        <h3 className="mt-5 font-semibold text-lg">躓いた所メモ</h3>
-        <ul className={'flex flex-col divide-y divide-gray-400'}>
+        <h3 className="mt-7 font-semibold text-lg">メモ / 躓いた所</h3>
+        <ul
+          className={'mt-3 flex flex-col divide-y divide-gray-400 border-t-[1px] border-t-gray-400'}
+        >
           <li className={'py-3'}>
             HTTPリクエストのレスポンスをテスト（可視化）するのにツールが必要。<br></br>
             例）Postman、Insomnia、EchoAPI for VSCode<br></br>
@@ -71,9 +75,11 @@ export default function post251217() {
             Clientを使用。ただし有料版でないと制約が多いらしく、後々困ったら代替を検討する。
           </li>
           <li className={'py-3'}>
-            {/* prettier-ignore */}
-            <pre><code>const app = new Hono()
-            app.route('/', rootRoute)</code></pre>
+            <p>インスタンス化してルーティング</p>
+            <CodeBlock language="typescript">
+              {`const app = new Hono()
+app.route('/', rootRoute)`}
+            </CodeBlock>
           </li>
         </ul>
       </article>

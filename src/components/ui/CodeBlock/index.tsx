@@ -1,13 +1,15 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-export default function CodeBlock() {
-  const codeString = `const app = new Hono()
-app.route('/', rootRoute)`;
+type Props = {
+  language?: string;
+  children: string;
+};
 
+export default function CodeBlock(props: Props) {
   return (
-    <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
-      {codeString}
+    <SyntaxHighlighter language={props.language} style={vscDarkPlus}>
+      {props.children}
     </SyntaxHighlighter>
   );
 }
