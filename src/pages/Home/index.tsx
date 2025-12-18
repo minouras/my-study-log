@@ -7,7 +7,7 @@ export default function Home() {
   const modules = import.meta.glob<{
     default: ComponentType<any>;
     meta: PostMeta;
-  }>('./../posts/*.tsx', { eager: true });
+  }>('./posts/*.tsx', { eager: true });
 
   // ファイル名からIDを抽出し、一覧を作成
   const posts = Object.entries(modules).map(([path, mod]) => {

@@ -1,7 +1,7 @@
-import { type PostMeta } from '../../lib/type';
-import SingleBase from '../../components/base/SingleBase';
-import Block from '../../components/ui/Block';
-import CodeBlock from '../../components/ui/CodeBlock';
+import { type PostMeta } from '@/lib/type';
+import SingleBase from '@/components/base/SingleBase';
+import Block from '@/components/ui/Block';
+import CodeBlock from '@/components/ui/CodeBlock';
 
 export const meta: PostMeta = {
   title: 'Hono 勉強記録',

@@ -1,8 +1,8 @@
-import { type PostMeta } from '../../lib/type';
+import { type PostMeta } from '@/lib/type';
 import ReactMarkdown from 'react-markdown';
 import content from './251125.md?raw';
-import SingleBase from '../../components/base/SingleBase';
-import '../../components/style/markdown.css';
+import SingleBase from '@/components/base/SingleBase';
+import '@/components/style/markdown.css';
 
 export const meta: PostMeta = {
   title: 'CJSとESMの違い',

@@ -1,7 +1,7 @@
-import { type PostMeta } from '../../lib/type';
-import SingleBase from '../../components/base/SingleBase';
-import Block from '../../components/ui/Block';
-import ListBlock from '../../components/ui/ListBlock';
+import { type PostMeta } from '@/lib/type';
+import SingleBase from '@/components/base/SingleBase';
+import Block from '@/components/ui/Block';
+import ListBlock from '@/components/ui/ListBlock';
 
 const titleTxt = 'text-xl font-bold text-blue-600 mb-2';
 const strongTxt = 'text-base font-semibold mb-1';

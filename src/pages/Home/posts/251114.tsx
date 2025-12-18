@@ -1,6 +1,6 @@
-import { type PostMeta } from '../../lib/type';
-import SingleBase from '../../components/base/SingleBase';
-import Block from '../../components/ui/Block';
+import { type PostMeta } from '@/lib/type';
+import SingleBase from '@/components/base/SingleBase';
+import Block from '@/components/ui/Block';
 
 export const meta: PostMeta = {
   title: 'Tailwind@v4の設定方法',

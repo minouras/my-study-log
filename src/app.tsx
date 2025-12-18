@@ -1,7 +1,7 @@
 import { Router, Route, LocationProvider } from 'preact-iso';
 import Header from './components/base/Header';
 import Home from './pages/Home';
-import Post from './pages/Post';
+import Post from './pages/Home/Post';
 
 export default function App() {
   return (
