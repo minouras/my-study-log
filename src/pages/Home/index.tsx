@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react';
-import { type PostMeta } from '../../lib/type';
-import BlogCard from '../../components/ui/BlogCard';
+import { type PostMeta } from '@/lib/type';
+import BlogCard from '@/components/ui/BlogCard';
 
 export default function Home() {
   // 記事ファイルを一括読み込み（同期）
