@@ -52,7 +52,7 @@ export default function Blog({ id }: Props) {
     return (
       <section className="px-[5%] pt-10">
         <h1 class="text-xl font-bold mb-4">ブログ一覧</h1>
-        <p className={'mb-6'}>メモ程度の開発ブログです。</p>
+        <p className={'mb-6'}>開発メモとしてのブログ（備忘録）</p>
         <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
           {posts.map(({ id, meta }) => (
             <li key={id} className="">

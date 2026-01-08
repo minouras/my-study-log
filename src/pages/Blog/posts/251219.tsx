@@ -4,7 +4,7 @@ import Block from '@/components/ui/Block';
 import CodeBlock from '@/components/ui/CodeBlock';
 
 export const meta: PostMeta = {
-  title: 'Lenisでインナースクロールで躓いた話',
+  title: 'Lenisでインナースクロール実装した時躓いた所',
   date: '2025.12.19',
   tags: ['Lenis', 'css', 'overflow'],
 };
