@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@theme {
+  --spacing-wrapper: 4.5vw;
+}
+
 @layer base {
   :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,11 +21,13 @@
   :root[data-theme='light'] {
     --color-bg: #ffffff;
     --color-text: #23272f;
+    --color-primaly: #3b82f6;
   }
 
   :root[data-theme='dark'] {
     --color-bg: #23272f;
     --color-text: #ffffff;
+    --color-primaly: #60a5fa;
   }
 
   body {
