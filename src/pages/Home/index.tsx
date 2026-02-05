@@ -2,6 +2,7 @@ import type { ComponentType } from 'react';
 import { type PostMeta } from '@/lib/type';
 import BlogCard from '@/components/ui/BlogCard';
 import Wrapper from '@/components/layout/Wrapper';
+import Section from '@/components/layout/Section';
 
 export default function Home() {
   // 記事ファイルを一括読み込み（同期）
@@ -17,7 +18,7 @@ export default function Home() {
   });
 
   return (
-    <section class="space-y-4">
+    <Section as="section">
       <Wrapper>
         <h1 class="text-xl font-bold mb-4">記事一覧</h1>
         <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
@@ -30,6 +31,6 @@ export default function Home() {
           ))}
         </ul>
       </Wrapper>
-    </section>
+    </Section>
   );
 }

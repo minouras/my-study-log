@@ -1,12 +1,11 @@
 @import 'tailwindcss';
 
 @theme {
-  --spacing-wrapper: 4.5vw;
 }
 
 @layer base {
   :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans JP', Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -16,6 +15,10 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    /* variable */
+    --font-noto: 'Noto Sans JP', Avenir, Helvetica, Arial, sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
   }
 
   :root[data-theme='light'] {

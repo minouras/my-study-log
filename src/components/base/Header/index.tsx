@@ -3,16 +3,18 @@ import { ThemeToggle } from '@/components/project/ThemeToggle';
 import styles from './style.module.css';
 
 export default function Header() {
-  const location = useLocation();
+  const { path } = useLocation();
 
   return (
-    <header class="p-4 flex justify-between items-center">
+    <header class="p-[3vw] flex justify-between items-center">
       <h1 class="text-xl font-bold ">
-        <a href="/my-study-log/">Study log</a>
+        <a href="/my-study-log/">
+          <i class="fa-solid fa-pencil text-2xl"></i>
+        </a>
       </h1>
       <div class={'flex items-center gap-4'}>
         <nav class={'flex items-center gap-4'}>
-          <a class={styles.nav_items} href="/my-study-log/">
+          <a class={`${styles.nav_items} ${path === '/' ? 'active' : ''}`} href="/my-study-log/">
             勉強ログ
           </a>
           <a class={styles.nav_items} href="/my-study-log/blog/">
