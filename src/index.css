@@ -19,18 +19,23 @@
     /* variable */
     --font-noto: 'Noto Sans JP', Avenir, Helvetica, Arial, sans-serif;
     --font-roboto: 'Roboto', sans-serif;
-  }
 
-  :root[data-theme='light'] {
     --color-bg: #ffffff;
     --color-text: #23272f;
     --color-primaly: #3b82f6;
   }
 
+    
+  :root[data-theme='light'] {
+    --color-bg: #ffffff;
+    --color-text: #23272f;
+    --color-primaly: #7fffd4;
+  }
+
   :root[data-theme='dark'] {
     --color-bg: #23272f;
     --color-text: #e0e0e0;
-    --color-primaly: #60a5fa;
+    --color-primaly: #80d5ff;
   }
 
   body {

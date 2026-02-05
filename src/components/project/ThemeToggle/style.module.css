@@ -31,7 +31,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  fill: var(--color-text);
+}
+
+.toggleBtn_slider_icon_sun {
+  fill: orange;
+}
+
+.toggleBtn_slider_icon_moon {
+  fill: yellow;
 }
 
 .toggleBtn_slider_icon_sun {

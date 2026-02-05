@@ -21,7 +21,7 @@ export default function Home() {
     <Section as="section">
       <Wrapper>
         <h1 class="text-xl font-bold mb-4">記事一覧</h1>
-        <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
+        <ul class="space-y-2 grid grid-cols-1 md:grid-cols-4 gap-y-4 gap-x-4">
           {posts.map(({ id, meta }) => (
             <li key={id} className="">
               <a className="block h-full" href={`post/${id}`} class="text-blue-600 hover:underline">

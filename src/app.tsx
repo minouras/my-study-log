@@ -6,18 +6,19 @@ import Blog from './pages/Blog';
 
 export default function App() {
   return (
-    <div class="min-h-screen">
-      <Header />
-      <main class="p-4">
-        <LocationProvider>
+    <LocationProvider>
+      <div class="min-h-screen">
+        <Header />
+        <main class="p-4">
           <Router>
             <Route path="my-study-log/" component={Home} />
             <Route path="my-study-log/post/:id" component={Post} />
             <Route path="my-study-log/blog" component={Blog} />
             <Route path="my-study-log/blog/:id" component={Blog} />
           </Router>
-        </LocationProvider>
-      </main>
-    </div>
+        </main>
+      </div>
+    </LocationProvider>
+    
   );
 }
