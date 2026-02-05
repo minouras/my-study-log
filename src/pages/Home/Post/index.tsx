@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
+import Wrapper from '@/components/layout/Wrapper';
 
 type Props = {
   path?: string;
@@ -31,8 +32,10 @@ export default function Post({ id }: Props) {
   if (!PostComponent) return <div>読み込み中...</div>;
 
   return (
-    <section className="px-[5%] pt-10">
-      <PostComponent />
+    <section className="pt-10">
+      <Wrapper size="default">
+        <PostComponent />
+      </Wrapper>
     </section>
   );
 }

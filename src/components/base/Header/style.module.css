@@ -1,0 +1,6 @@
+.nav_items {
+  display: block;
+  position: relative;
+  font-weight: 500;
+  background-color: var(--color-red-300);
+}

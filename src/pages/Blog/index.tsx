@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import type { ComponentType } from 'react';
 import { type PostMeta } from '@/lib/type';
 import BlogCard from '@/components/ui/BlogCard';
+import Wrapper from '@/components/layout/Wrapper';
 
 type Props = {
   id?: string;
@@ -73,7 +74,9 @@ export default function Blog({ id }: Props) {
   return (
     <section className="px-[5%] pt-10">
       {/* 詳細コンポーネントの表示 */}
-      <PostComponent />
+      <Wrapper>
+        <PostComponent />
+      </Wrapper>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react';
 import { type PostMeta } from '@/lib/type';
 import BlogCard from '@/components/ui/BlogCard';
+import Wrapper from '@/components/layout/Wrapper';
 
 export default function Home() {
   // 記事ファイルを一括読み込み（同期）
@@ -16,17 +17,19 @@ export default function Home() {
   });
 
   return (
-    <div class="space-y-4">
-      <h1 class="text-xl font-bold mb-4">記事一覧</h1>
-      <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
-        {posts.map(({ id, meta }) => (
-          <li key={id} className="">
-            <a className="block h-full" href={`post/${id}`} class="text-blue-600 hover:underline">
-              <BlogCard {...meta}></BlogCard>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <section class="space-y-4">
+      <Wrapper>
+        <h1 class="text-xl font-bold mb-4">記事一覧</h1>
+        <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
+          {posts.map(({ id, meta }) => (
+            <li key={id} className="">
+              <a className="block h-full" href={`post/${id}`} class="text-blue-600 hover:underline">
+                <BlogCard {...meta}></BlogCard>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Wrapper>
+    </section>
   );
 }
