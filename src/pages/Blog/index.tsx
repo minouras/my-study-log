@@ -54,10 +54,10 @@ export default function Blog({ id }: Props) {
       <section className="px-[5%] pt-10">
         <h1 class="text-xl font-bold mb-4">ブログ一覧</h1>
         <p className={'mb-6'}>開発メモとしてのブログ（備忘録）</p>
-        <ul class="space-y-2 grid grid-cols-1 min-md:grid-cols-4 gap-y-4 gap-x-4">
+        <ul class="space-y-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-4 gap-x-4">
           {posts.map(({ id, meta }) => (
-            <li key={id} className="">
-              <a className="block h-full" href={`${id}`} class="text-blue-600 hover:underline">
+            <li key={id} className="block h-full">
+              <a className="block h-full hover:opacity-70 transition-all" href={`${id}`} class="text-blue-600 hover:underline">
                 <BlogCard {...meta}></BlogCard>
               </a>
             </li>

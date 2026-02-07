@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-@theme {
-}
+@variant dark (&:where(.dark, .dark *)){};
 
 @layer base {
   :root {
@@ -20,14 +19,14 @@
     --font-noto: 'Noto Sans JP', Avenir, Helvetica, Arial, sans-serif;
     --font-roboto: 'Roboto', sans-serif;
 
-    --color-bg: #ffffff;
+    --color-bg: #FAF9F6;
     --color-text: #23272f;
-    --color-primaly: #3b82f6;
+    --color-primaly: #7fffd4;
   }
 
     
   :root[data-theme='light'] {
-    --color-bg: #ffffff;
+    --color-bg: #FAF9F6;
     --color-text: #23272f;
     --color-primaly: #7fffd4;
   }
@@ -35,7 +34,7 @@
   :root[data-theme='dark'] {
     --color-bg: #23272f;
     --color-text: #e0e0e0;
-    --color-primaly: #80d5ff;
+    --color-primaly: #5c7d99;
   }
 
   body {
